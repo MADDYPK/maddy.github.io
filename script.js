@@ -14,7 +14,31 @@ function toggleTheme() {
         themeToggle.textContent = '🌙';
     }
 }
+// Slider Functionality
+        const navBtns = document.querySelectorAll('.nav-btn');
+        const slides = document.querySelectorAll('.slide');
 
+        navBtns.forEach((btn, index) => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all nav buttons and slides
+                navBtns.forEach(b => b.classList.remove('active'));
+                slides.forEach(s => {
+                    s.classList.remove('active');
+                    s.classList.remove('prev');
+                });
+
+                // Add active class to clicked nav button
+                btn.classList.add('active');
+                
+                // Add prev class to slides before active
+                for (let i = 0; i < index; i++) {
+                    slides[i].classList.add('prev');
+                }
+                
+                // Add active class to corresponding slide
+                slides[index].classList.add('active');
+            });
+        });
 // Form Submission Handler
 function handleSubmit(event) {
     event.preventDefault();
@@ -81,7 +105,9 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-    
+
+
+
     // Initialize theme based on user preference
     initializeTheme();
     
@@ -340,3 +366,34 @@ window.addEventListener('scroll', throttle(function() {
     
     updateActiveNavLink();
 }, 16)); // ~60fps
+
+function openLink(url) {
+    window.open(url, '_blank');
+}
+
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                // Create temporary notification
+                const notification = document.createElement('div');
+                notification.textContent = 'Copied to clipboard!';
+                notification.style.cssText = `
+                    position: fixed;
+                    top: 20px;
+                    right: 20px;
+                    background: var(--success-gradient);
+                    color: white;
+                    padding: 0.75rem 1rem;
+                    border-radius: 10px;
+                    z-index: 10000;
+                    font-size: 0.9rem;
+                    animation: slideInRight 0.3s ease;
+                `;
+                
+                document.body.appendChild(notification);
+                
+                setTimeout(() => {
+                    notification.style.animation = 'slideInLeft 0.3s ease reverse';
+                    setTimeout(() => notification.remove(), 300);
+                }, 2000);
+            });
+        }
