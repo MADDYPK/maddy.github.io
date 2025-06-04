@@ -151,7 +151,7 @@
             <h3>BGMI</h3>
             <p>Battle royale survival at its finest. Dropping hot and going for those chicken dinners with the squad.</p>
             <div class="game-genre">Battle Royale • Mobile</div>
-            <div class="game-id"><strong>BGMI ID:</strong> 1234567890</div>
+            <div class="game-id"><strong>BGMI ID:</strong> 5176068446</div>
             </div>
                 <div class="game-card">
                     <div class="game-icon">
@@ -173,27 +173,71 @@
         </div>
     </section>
 
-    <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <form class="contact-form" onsubmit="handleSubmit(event)">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
+<section id="contact" class="section">
+    <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        
+        <div class="contact-slider">
+            <div class="slider-nav">
+                <button class="nav-btn active" data-slide="0">
+                    <i class="fas fa-share-alt"></i>
+                    Social Media
+                </button>
+                <button class="nav-btn" data-slide="1">
+                    <i class="fas fa-envelope"></i>
+                    Contact Form
+                </button>
+            </div>
+            
+            <div class="slider-content">
+                <!-- Social Media Slide -->
+                <div class="slide active">
+                    <div class="social-grid">
+                        <div class="social-card instagram" onclick="openLink('https://www.instagram.com/ig_._.maddy/')">
+                            <i class="fab fa-instagram social-icon"></i>
+                            <h3 class="social-title">Instagram</h3>
+                            <p class="social-info">@ig_._.maddy<br>Follow for updates</p>
+                        </div>
+                        <div class="social-card discord" onclick="openLink('https://discord.gg/Jt5KfxC4tM')">
+                            <i class="fab fa-discord social-icon"></i>
+                            <h3 class="social-title">Discord</h3>
+                            <p class="social-info">pkmaddy<br>Join my server</p>
+                        </div>
+                        <div class="social-card github" onclick="openLink('https://github.com/TRDMADDY')">
+                            <i class="fab fa-github social-icon"></i>
+                            <h3 class="social-title">GitHub</h3>
+                            <p class="social-info">@TRDMADDY<br>Check my repos</p>
+                        </div>
+                        <div class="social-card twitter" onclick="openLink('https://x.com/TRDMADDY')">
+                            <i class="fab fa-twitter social-icon"></i>
+                            <h3 class="social-title">Twitter</h3>
+                            <p class="social-info">@TRDMADDY<br>Latest thoughts</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
-        </div>
-    </section>
 
+                <!-- Contact Form Slide -->
+                <div class="slide">
+                    <form class="contact-form" onsubmit="handleSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group"> 
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     <footer>
         <div class="container">
             <p>&copy; 2025 MADDY.</p>
