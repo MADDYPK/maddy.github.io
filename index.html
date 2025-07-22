@@ -1,573 +1,239 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manthrika Charlie</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset                         = "UTF-8">
+    <meta name                            = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>MADDY</title>
+    <link rel                             = "stylesheet" href="style.css">
 </head>
 <body>
-    <div class="cyber-grid"></div>
-    <div class="scanlines"></div>
-    
-    <nav class="nav-bar">
-        <div class="nav-brand">
-            <span class="brand-icon"></span>
-            <span class="brand-text">Charlie</span>
-        </div>
-        <div class="nav-links">
-            <a href="#coin-system" class="nav-link">COIN SYSTEM</a>
-            <a href="#how-to-get" class="nav-link">GET COINS</a>
-            <a href="#community-drops" class="nav-link">DROPS</a>
-            <a href="#commands" class="nav-link">COMMANDS</a>
-            <a href="#how-to-use" class="nav-link">SETUP</a>    
-        </div>
-    </nav>
+    <div class                            = "background-animation"></div>
+    <header>
+        <nav class                        = "container">
+            <div class                    = "logo">MADDY</div>
+            <ul class                     = "nav-links">
+                <li><a href               = "#home">Home</a></li>
+                <li><a href               = "#about">About</a></li>
+                <li><a href               = "#skills">Skills</a></li>
+                <li><a href               = "#projects">Works</a></li>
+                <li><a href               = "#games">Games</a></li>
+                <li><a href               = "#contact">Contact</a></li>
+            </ul>
+            <button class                 = "theme-toggle" onclick="toggleTheme()">🌙</button>
+        </nav>
+    </header>
 
-    <main class="main-container">
-        <section class="hero-section">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    <span class="glitch" data-text="Manthrika Charlie">Manthrika Charlie</span>
-                    <span class="subtitle">Manthrika Charlie Protocol</span>
-                </h1>
-                <p class="hero-description">
-                    Advanced Discord bot integration with gamified coin system
-                </p>
-                <button class="cta-button" onclick="scrollToSection('coin-system')">
-                    <span>Initialize Protocol</span>
-                    <div class="button-glow"></div>
-                </button>
+    <section id                           = "home" class="hero">
+        <div class                        = "hero-content">
+            <h1>MADDY</h1>
+            <p>Developer & UI/UX Designer</p>
+            <a href                       = "#projects" class="cta-button">View My Work</a>
+                    </div>
+    </section>
+    <section id                           = "about" class="section">
+    <div class                            = "container">
+        <h2 class                         = "section-title">About Me</h2>
+        <div class                        = "about-grid">
+            <div class                    = "about-text">
+                <p>I'm a passionate developer with experience in building Discord bots, developing and managing FiveM servers, and creating custom websites. I enjoy bringing ideas to life through code and constantly learning new technologies to improve my work.</p>
+                <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects.</p>
             </div>
-            <div class="hero-visual">
+            <div class                    = "about-image">
+            <img class                    = "profile-pic" src="assets/dbmaddy.png" alt="Profile Picture">
+            </div>
+             </div>
+             </div>
+    </div>
+</section>
+<link rel                                 = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-        <div class="hologram">
-        <div class="hologram-ring"></div>
-        <div class="hologram-ring"></div>
-        <div class="hologram-ring"></div>
-        <div class="hologram-core">
-            <img src="images/bot-logo.png" alt="Bot Logo" class="bot-logo">
+<section id                               = "skills" class="section">
+    <div class                            = "container">
+        <h2 class                         = "section-title">Skills</h2>
+        <div class                        = "skills-grid">
+            <div class                    = "skill-card">
+                <div class                = "skill-icon"><i class="fa-brands fa-discord"></i></div>
+                <h3>Discord Bot Dev</h3>
+                <p>Crafting powerful and flexible Discord bots with JavaScript (ES6+) and Discord.js. From moderation and logging to fun commands and custom automation  built with performance and user experience in mind.</p>
+                </div>
+            <div class                    = "skill-card">
+                <div class                = "skill-icon">FM</div>
+                <h3>FiveM Dev</h3>
+                <p>Building immersive and responsive FiveM scripts using Lua and JavaScript. From custom jobs and UI to full server systems focused on performance, player engagement, and clean code.</p>
+                </div>
+            <div class                    = "skill-card">
+                <div class                = "skill-icon"><i class="fa-solid fa-paintbrush"></i></div>
+                <h3>UI/UX Dev</h3>
+                <p>Designing modern, responsive interfaces with advanced CSS, accessibility, and intuitive user experiences.</p>
+                </div>
         </div>
     </div>
-</div>
-
-
-        </section>
-
-        <section id="coin-system" class="section">
-            <div class="section-header">
-                <h2 class="section-title">
-                    <span class="section-number"></span>
-                    COIN SYSTEM
-                </h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="content-grid">
-                <div class="info-card">
-                    <div class="card-header">
-                        <div class="card-icon">💰</div>
-                        <h3>Point System Integration</h3>
+</section>
+<section id                               = "projects" class="section">
+        <div class                        = "container">
+            <h2 class                     = "section-title">Works</h2>
+            <div class                    = "projects-grid">
+                    <div class            = "project-card">
+                    <div class            = "project-image" style="display: flex; justify-content: center; align-items: center; padding: 20px;">
+                    <img src              = "assets/vegalogo.gif"
+                    alt                   = "VEGA CITY 2049 Logo"
+                    style                 = "max-width: 100%; height: 150px; object-fit: contain;" />
                     </div>
-                    <p>We have introduced a point system to create a more fun and in-depth experience when giving rewards.</p>
+                    <div class            = "project-content">
+                        <h3 class         = "project-title">VEGA CITY 2049</h3>
+                        <p class          = "project-description">VEGA CITY 2049 is a futuristic roleplay server inspired by Cyberpunk 2077, featuring custom-built environments, high-tech vehicles, and immersive gameplay set in a neon-lit dystopian world.</p>
+                        <a href           = "https://discord.gg/vega-city-kerala-1218698754052591747" class="project-link">View Project →</a>
+                         </div>
                 </div>
-                <div class="info-card">
-                    <div class="card-header">
-                        <div class="card-icon">🎯</div>
-                        <h3>Why Coin</h3>
-                    </div>
-                    <p>Coin is a way to introduce a more fun way to create interaction in the community. For those that don't care for it, you can simply collect points and convert them into actual prizes in our server!</p>
+                <div class                = "project-card">
+                    <div class            = "project-image" style="display: flex; justify-content: center; align-items: center; padding: 20px;">
+                        <img src          = "assets/FiveDB_Transparent.png"
+                    alt                   = "Fivem DB"
+                    style                 = "max-width: 100%; height: 150px; object-fit: contain;" />
+                     </div>
+                    <div class            = "project-content">
+                        <h3 class         = "project-title">Fivem DB</h3>
+                        <p class          = "project-description">We are a dedicated team of people who care deeply about the FiveM platform and are committed to ensuring it remains safe and enjoyable for everyone in the community.</p>
+                        <a href           = "https://fivemdb.online/" class="project-link">View Project →</a>
+                         </div>
                 </div>
-                <div class="info-card featured">
-                    <div class="card-header">
-                        <div class="card-icon">🔄</div>
-                        <h3>Convert to Real Value</h3>
+                <div class                = "project-card">
+                    <div class            = "project-image" style="display: flex; justify-content: center; align-items: center; padding: 20px;">
+                        <img src          = "assets/kalipan.png"
+                    alt                   = "kalipan"
+                    style                 = "max-width: 100%; height: 150px; object-fit: contain;" />
                     </div>
-                    <p>Using <code>/convertcoin</code>, you can convert your Discord coin into ingame money. This makes points more valuable than just being a meaningless Discord community currency.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="how-to-get" class="section">
-            <div class="section-header">
-                <h2 class="section-title">
-                    <span class="section-number"></span>
-                    HOW TO GET COIN
-                </h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="methods-container">
-                <div class="method-card" onclick="toggleMethod(this)">
-                    <div class="method-header">
-                        <div class="method-icon">📅</div>
-                        <h3>Daily Claims</h3>
-                        <div class="expand-indicator">+</div>
-                    </div>
-                    <div class="method-content">
-                        <p>Claiming in <a href="https://discord.com/channels/1218698754052591747/1387469509375561838">#daily</a> use /claimdaily</p>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 100%"></div>
+                    <div class            = "project-content">
+                        <h3 class         = "project-title">kalipan</h3>
+                        <p class          = "project-description">Kalipan is a versatile Discord bot offering moderation, utility, and fun features all in one tool to enhance any server.</p>
+                        <a href           = "https://top.gg/bot/791147377570086943" class="project-link">View Project →</a>
                         </div>
-                    </div>
                 </div>
-
-                <div class="method-card" onclick="toggleMethod(this)">
-                    <div class="method-header">
-                        <div class="method-icon">🏆</div>
-                        <h3>Events & Giveaways</h3>
-                        <div class="expand-indicator">+</div>
+                    <div class            = "project-card">
+                    <div class            = "project-image" style="display: flex; justify-content: center; align-items: center; padding: 20px;">
+                        <img src          = "assets/vertex.png"
+                    alt                   = "VERTEX CUSTOMS"
+                    style                 = "max-width: 100%; height: 150px; object-fit: contain;" />
                     </div>
-                    <div class="method-content">
-                        <p>Winning events or giveaways</p>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 75%"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="method-card" onclick="toggleMethod(this)">
-                    <div class="method-header">
-                        <div class="method-icon">🎲</div>
-                        <h3>Random Drops</h3>
-                        <div class="expand-indicator">+</div>
-                    </div>
-                    <div class="method-content">
-                        <p>Clicking on a random drop</p>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 60%"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="method-card" onclick="toggleMethod(this)">
-                    <div class="method-header">
-                        <div class="method-icon">👥</div>
-                        <h3>Community Drops</h3>
-                        <div class="expand-indicator">+</div>
-                    </div>
-                    <div class="method-content">
-                        <p>Clicking on a community drop</p>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 80%"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="method-card" onclick="toggleMethod(this)">
-                    <div class="method-header">
-                        <div class="method-icon">💸</div>
-                        <h3>Transfers</h3>
-                        <div class="expand-indicator">+</div>
-                    </div>
-                    <div class="method-content">
-                        <p>Send coins to another user. Mention the user and specify the amount you want to transfer.</p>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 90%"></div>
-                        </div>
-                    </div>
-                </div>
-                    <div class="method-card" onclick="toggleMethod(this)">
-                    <div class="method-header">
-                        <div class="method-icon">🎮</div>
-                        <h3>Play Games</h3>
-                        <div class="expand-indicator">+</div>
-                    </div>
-                    <div class="method-content">
-                        <p>Play different types of games to win more coins, but be careful—there’s also a chance of losing them.</p>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 80%"></div>
-                        </div>
-                    </div>
+                    <div class            = "project-content">
+                        <h3 class         = "project-title">VERTEX CUSTOMS</h3>
+                        <p class          = "project-description">VERTEX CUSTOMS is your go-to destination for high-quality, free FiveM scripts. Whether you're looking to enhance your server with custom features or need ready-to-use scripts, VERTEX CUSTOMS delivers powerful solutions designed for the FiveM community.</p>
+                        <a href           = "https://vertex.tebex.io/" class="project-link">View Project →</a>
+                                            </div>
                 </div>
             </div>
-        </section>
-
-        <section id="community-drops" class="section">
-            <div class="section-header">
-                <h2 class="section-title">
-                    <span class="section-number"></span>
-                    COMMUNITY DROPS
-                </h2>
-                <div class="section-line"></div>
             </div>
-            <div class="drops-container">
-                <div class="drop-card ore-drop">
-                    <div class="drop-header">
-                        <div class="drop-icon">⛏️</div>
-                        <h3>Ore Drop</h3>
-                        <div class="drop-rarity common">COMMON</div>
-                    </div>
-                    <div class="drop-content">
-                        <p>Mine the dropped ore to earn coins. After each mine, you have a 2.5 sec cooldown.  The ores you can find are:  
-                        <strong>Coal</strong> (40.1%), <strong>Copper</strong> (23.2%), <strong>Iron</strong> (14.8%),  
-                        <strong>Gold</strong> (10.5%), <strong>Diamond</strong> (6.3%),  
-                        <strong>Emerald</strong> (3.2%), and <strong>Netherite</strong> (1.9%).
-                        </p>
-
-                        <div class="drop-stats">
-                            <div class="stat">
-                                <span class="stat-label">Cooldown:</span>
-                                <span class="stat-value">2.5s</span>
-                            </div>
-                        </div>
-                    </div>
+    </section>
+    <section id                           = "games" class="section">
+        <div class                        = "container">
+            <h2 class                     = "section-title">Games I Play</h2>
+            <div class                    = "games-grid">
+            <div class                    = "game-card">
+            <div class                    = "game-icon">
+                <img src                  = "assets/valo.png" alt="Valorant Logo">
                 </div>
-
-                <div class="drop-card single-drop">
-                    <div class="drop-header">
-                        <div class="drop-icon">💎</div>
-                        <h3>Single Drop</h3>
-                        <div class="drop-rarity legendary">LEGENDARY</div>
-                    </div>
-                    <div class="drop-content">
-                        <p>A rare drop that only one player can claim. Be the quickest to react!</p>
-                        <div class="drop-stats">
-                            <div class="stat">
-                                <span class="stat-label">Players:</span>
-                                <span class="stat-value">1 Only</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="drop-card normal-drop">
-                    <div class="drop-header">
-                        <div class="drop-icon">📦</div>
-                        <h3>Normal Drop</h3>
-                        <div class="drop-rarity rare">RARE</div>
-                    </div>
-                    <div class="drop-content">
-                        <p>A drop that stays active for a limited time. Everyone can claim it before it disappears!</p>
-                        <div class="drop-stats">
-                            <div class="stat">
-                                <span class="stat-label">Duration:</span>
-                                <span class="stat-value">Limited</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="drop-card number-guess">
-                    <div class="drop-header">
-                        <div class="drop-icon">🎯</div>
-                        <h3>Number Guess</h3>
-                        <div class="drop-rarity epic">EPIC</div>
-                    </div>
-                    <div class="drop-content">
-                        <p>A fun mini-game where you guess the correct number to win coins!</p>
-                        <div class="drop-stats">
-                            <div class="stat">
-                                <span class="stat-label">Type:</span>
-                                <span class="stat-value">Mini-Game</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="drop-mention-card">
-                    <div class="mention-header">
-                        <div class="mention-icon">🔔</div>
-                        <h3>Drop Mention</h3>
-                    </div>
-                    <div class="mention-content">
-                        <p>Stay updated on community drops!</p>
-                        <ul>
-                            <li>Click the button below to get the Drop Mention role.</li>
-                            <li>When a community drop (Ore Drop, Single Drop, Normal Drop, etc.) spawns, users with this role will be pinged so they don't miss it!</li>
-                        </ul>
-                        
-                        <button class="mention-button" onclick="openDiscordChannel()">
-                        <span>Get Drop Mention Role</span>
-                        <div class="button-pulse"></div>
-                        </button>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="commands" class="section">
-        <div class="section-header">
-            <h2 class="section-title">
-                <span class="section-number"></span>
-                COMMANDS
-            </h2>
-            <div class="section-line"></div>
+            <h3>Valorant</h3>
+            <p>Tactical FPS shooter where precision and strategy meet. Always ready for competitive matches and ranked climbs.</p>
+            <div class                    = "game-genre">FPS • Competitive</div>
+            <div class                    = "game-id"><strong>Riot ID: </strong>MADDYMON#2255</div>
         </div>
-        <div class="terminal-container">
-            <div class="terminal-header">
-                <div class="terminal-buttons">
-                    <div class="terminal-button red"></div>
-                    <div class="terminal-button yellow"></div>
-                    <div class="terminal-button green"></div>
+         <div class                       = "game-card">
+             <div class                   = "game-icon">
+                <img src                  = "assets/bgmi.png" alt="BGMI Logo">
                 </div>
-                <div class="terminal-title">discord_bot_commands.exe</div>
+            <h3>BGMI</h3>
+            <p>Battle royale survival at its finest. Dropping hot and going for those chicken dinners with the squad.</p>
+            <div class                    = "game-genre">Battle Royale • Mobile</div>
+            <div class                    = "game-id"><strong>BGMI ID:</strong> 5176068446</div>
             </div>
-            <div class="terminal-content">
-                <div class="command-section">
-                    <div class="command-line">
-                        <span class="prompt">root@discord:~$</span>
-                        <span class="command">/claimdaily</span>
+                <div class                = "game-card">
+                    <div class            = "game-icon">
+                        <img src          = "assets/gta v.png" alt="GTA V Logo">
+                        </div>
+                    <h3>GTA V</h3>
+                    <p>Open world chaos and endless possibilities. From heists to racing, always finding new adventures in Los Santos.</p>
+                    <div class            = "game-genre">Open World • Action</div>
                     </div>
-                    <div class="description">Claim your daily coin reward. Available once every 24 hours.</div>
-                    <div class="example">
-                        <div class="example-title">Example:</div>
-                        <div class="example-command">/claimdaily</div>
-                        <div class="example-result">✅ Daily reward claimed! You received 100 coins. Come back tomorrow for another reward!</div>
-                    </div>
-                </div>
-
-                <div class="command-section">
-                    <div class="command-line">
-                        <span class="prompt">root@discord:~$</span>
-                        <span class="command">/convertcoin [amount]</span>
-                    </div>
-                    <div class="description">Convert Discord coins to in-game currency at a 1:10 ratio.</div>
-                    <div class="example">
-                        <div class="example-title">Example:</div>
-                        <div class="example-command">/convertcoin amount:500</div>
-                        <div class="example-result">💰 Successfully converted 500 Discord coins to 5,000 in-game currency!</div>
-                    </div>
-                </div>
-
-                <div class="command-section">
-                    <div class="command-line">
-                        <span class="prompt">root@discord:~$</span>
-                        <span class="command">/balance</span>
-                    </div>
-                    <div class="description">Check your current coin balance and transaction history.</div>
-                    <div class="example">
-                        <div class="example-title">Example:</div>
-                        <div class="example-command">/balance</div>
-                        <div class="example-result">💳 Your balance: 1,250 Discord coins | Last earned: 2 hours ago | Total earned: 5,430 coins</div>
-                    </div>
-                </div>
-
-                <div class="command-section">
-                    <div class="command-line">
-                        <span class="prompt">root@discord:~$</span>
-                        <span class="command">/coinflip [bet] [choice]</span>
-                    </div>
-                    <div class="description">A luck-based gambling game. Bet on Heads or Tails. Win double your bet, or lose it all!</div>
-                    <div class="example">
-                        <div class="example-title">Example:</div>
-                        <div class="example-command">/coinflip bet:100 choice:heads</div>
-                        <div class="example-result">🪙 The coin landed on... HEADS! 🎉 You won 200 coins! Your new balance: 1,350 coins</div>
-                    </div>
-                </div>
-
-                <div class="command-section">
-                    <div class="command-line">
-                        <span class="prompt">root@discord:~$</span>
-                        <span class="command">/dice [1-6] [amount]</span>
-                    </div>
-                    <div class="description">A thrilling game of luck where you bet on a number between 1 and 6. Roll the dice, and if your guess matches the result, you win 2x your bet amount!</div>
-                    <div class="example">
-                        <div class="example-title">Example:</div>
-                        <div class="example-command">/dice 4 100</div>
-                        <div class="example-result">If the dice lands on 4, you win 200 coins; if not, you lose your bet.</div>
-                    </div>
-                </div>
-
-                <div class="command-section">
-                    <div class="command-line">
-                        <span class="prompt">root@discord:~$</span>
-                        <span class="command">/transfer <code>@user</code> [amount]</span>
-                    </div>
-                    <div class="description">Send coins to another user. Mention the user and specify the amount you want to transfer.</div>
-                    <div class="example">
-                        <div class="example-title">Example:</div>
-                        <div class="example-command">/transfer <code>@username</code> 100</div>
-                        <div class="example-result">Transfers 100 coins to the mentioned user from your balance.</div>
-                    </div>
-                </div>
-
-                <div class="command-section">
-                    <div class="command-line">
-                        <span class="prompt">root@discord:~$</span>
-                        <span class="command">/wheelspin</span>
-                    </div>
-                    <div class="description">Spin the wheel and test your luck! <br>Cost: 50 coins per spin. <br>Win 1.5x, 2x, 3x, or 5x your bet—or lose your 50 coins. <br>Note: You can spin only once every 1 hour.</div>
-                    <div class="example">
-                        <div class="example-title">Example:</div>
-                        <div class="example-command">/wheenspin</div>
-                        <div class="example-result">If it lands on 3x, you win 150 coins!</div>
-                    </div>
-                </div>
-
-                <div class="command-section">
-                    <div class="command-line">
-                        <span class="prompt">root@discord:~$</span>
-                        <span class="command">/slots [amount]</span>
-                    </div>
-                    <div class="description">Try your luck at the slot machine! <br> If 3 emojis match → You win 3x your bet. <br>If 2 emojis match → You win 1.5x your bet. <br> If no match → You lose your bet.</div>
-                    <div class="example">
-                        <div class="example-title">Example:</div>
-                        <div class="example-command">/slots 100</code> 100</div>
-                        <div class="example-result">Spin the slots and see if you hit a jackpot!</div>
-                    </div>
-                </div>
-
-
-                <div class="typing-indicator">
-                    <span class="prompt">root@discord:~$</span>
-                    <span class="typing-text">Type a command to get started...</span>
-                    <span class="cursor">|</span>
-                </div>
+                <div class                = "game-card">
+                    <div class            = "game-icon">
+                        <img src          = "assets/ets2.png" alt="ETS2 Logo">
+                        </div>
+                    <h3>ETS 2</h3>
+                    <p>Euro Truck Simulator 2 - The relaxing side of gaming. Long hauls across Europe with some good music.</p>
+                    <div class            = "game-genre">Simulation • Relaxing</div>
+                     </div>
             </div>
         </div>
     </section>
-        <section id="how-to-use" class="section">
-            <div class="section-header">
-                <h2 class="section-title">
-                    <span class="section-number"></span>
-                    HOW TO USE THESE FEATURES
-                </h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="usage-container">
-                <div class="usage-card">
-                    <div class="usage-header">
-                        <div class="usage-icon">🔗</div>
-                        <h3>Account Linking Required</h3>
-                    </div>
-                    <div class="usage-content">
-                        <p>To play games, earn coins, and claim rewards, you must first link your Discord account to your in-game account:</p>
-                        <div class="steps-container">
-                            <div class="step">
-                                <div class="step-number">1</div>
-                                <div class="step-content">
-                                    <h4>Join the server</h4>
-                                    <p>Make sure you're part of our Discord community</p>
-                                </div>
-                            </div>
-                            <div class="step">
-                                <div class="step-number">2</div>
-                                <div class="step-content">
-                                    <h4>Use the linking command</h4>
-                                    <p>Type <code>/linkdiscord</code> in-game to connect your accounts</p>
-                                </div>
-                            </div>
-                            <div class="step">
-                                <div class="step-number">3</div>
-                                <div class="step-content">
-                                    <h4>Start using bot commands</h4>
-                                    <p>After linking, you can use all bot commands and features</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+<section id                               = "contact" class="section">
+    <div class                            = "container">
+        <h2 class                         = "section-title">Get In Touch</h2>
+        
+        <div class                        = "contact-slider">
+            <div class                    = "slider-nav">
+                <button class             = "nav-btn active" data-slide="0">
+                    <i class              = "fas fa-share-alt"></i>
+                    Social Media
+                </button>
+                <button class             = "nav-btn" data-slide="1">
+                    <i class              = "fas fa-envelope"></i>
+                    Contact Form
+                </button>
                 </div>
+            
+            <div class                    = "slider-content">
+                <!-- Social Media Slide -->
+                <div class                = "slide active">
+                    <div class            = "social-grid">
+                        <div class        = "social-card instagram" onclick="openLink('https://www.instagram.com/ig_._.maddy/')">
+                            <i class      = "fab fa-instagram social-icon"></i>
+                            <h3 class     = "social-title">Instagram</h3>
+                            <p class      = "social-info">@ig_._.maddy<br>Follow for updates</p>
+                        </div>
+                        <div class        = "social-card discord" onclick="openLink('https://discord.gg/Jt5KfxC4tM')">
+                            <i class      = "fab fa-discord social-icon"></i>
+                            <h3 class     = "social-title">Discord</h3>
+                            <p class      = "social-info">pkmaddy<br>Join my server</p>
+                        </div>
+                        <div class        = "social-card github" onclick="openLink('https://github.com/TRDMADDY')">
+                            <i class      = "fab fa-github social-icon"></i>
+                            <h3 class     = "social-title">GitHub</h3>
+                            <p class      = "social-info">@TRDMADDY<br>Check my repos</p>
+                        </div>
+                        <div class        = "social-card twitter" onclick="openLink('https://x.com/TRDMADDY')">
+                            <i class      = "fab fa-twitter social-icon"></i>
+                            <h3 class     = "social-title">Twitter</h3>
+                            <p class      = "social-info">@TRDMADDY<br>Latest thoughts</p>
+                        </div>
+                        </div>
+                </div>
+
+                <!-- Contact Form Slide -->
+                <div class                = "slide">
+                    <form class           = "contact-form" onsubmit="handleSubmit(event)">
+                        <div class        = "form-group">
+                            <label for    = "name">Name</label>
+                            <input type   = "text" id="name" name="name" required>
+                        </div>
+                        <div class        = "form-group">
+                            <label for    = "email">Email</label>
+                            <input type   = "email" id="email" name="email" required>
+                            </div>
+                        <div class        = "form-group">
+                            <label for    = "message">Message</label>
+                            <textarea id  = "message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type      = "submit" class="submit-btn">Send Message</button>
+                    </form>
+                     </div>
             </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-    <div class="footer-content">
-        <p>&copy; 2025. 
-            <a href="https://vegacity.in" target="_blank" class="footer-link">VEGA 2049</a>
-        </p>
-        <div class="system-status">
-            <span class="status-indicator online"></span>
-            <span>ONLINE</span>
-        </div>
+            </div>
     </div>
-</footer>
-
-
-<script>
-    // Smooth scrolling
-    function scrollToSection(id) {
-        document.getElementById(id).scrollIntoView({ 
-            behavior: 'smooth',
-            block: 'start'
-        });
-    }
-
-    // Method card toggle
-    function toggleMethod(card) {
-        const indicator = card.querySelector('.expand-indicator');
-        const content = card.querySelector('.method-content');
-        
-        if (card.classList.contains('expanded')) {
-            card.classList.remove('expanded');
-            indicator.textContent = '+';
-        } else {
-            card.classList.add('expanded');
-            indicator.textContent = '-';
-        }
-    }
-
-    // Add floating particles
-    function createParticle() {
-        const particle = document.createElement('div');
-        particle.className = 'particle';
-        particle.style.left = Math.random() * window.innerWidth + 'px';
-        particle.style.animationDuration = (Math.random() * 3 + 2) + 's';
-        document.body.appendChild(particle);
-        
-        setTimeout(() => {
-            particle.remove();
-        }, 5000);
-    }
-
-    // Create particles periodically
-    setInterval(createParticle, 300);
-
-    // Add scroll effects
-    window.addEventListener('scroll', () => {
-        const scrolled = window.pageYOffset;
-        const rate = scrolled * -0.5;
-        
-        document.querySelector('.cyber-grid').style.transform = `translate3d(0, ${rate}px, 0)`;
-    });
-
-    // Glitch effect
-    setInterval(() => {
-        const glitchElements = document.querySelectorAll('.glitch');
-        glitchElements.forEach(el => {
-            if (Math.random() > 0.95) {
-                el.classList.add('glitch-active');
-                setTimeout(() => {
-                    el.classList.remove('glitch-active');
-                }, 100);
-            }
-        });
-    }, 100);
-
-    // Open Discord channel (app or fallback to browser)
-    function openDiscordChannel() {
-        // Try to open the Discord app
-        window.location.href = "discord://-/channels/1218698754052591747/1395793766136287333/1396017073372528682";
-        
-        // Fallback to browser after 1 second if app isn't installed
-        setTimeout(() => {
-            window.open("https://discord.com/channels/1218698754052591747/1395793766136287333/1396017073372528682", "_blank");
-        }, 1000);
-    }
-</script>
-
-
-    <style>
-        .particle {
-            position: fixed;
-            width: 2px;
-            height: 2px;
-            background: #00ff88;
-            box-shadow: 0 0 6px #00ff88;
-            animation: float-up linear infinite;
-            pointer-events: none;
-            z-index: 1;
-        }
-
-        @keyframes float-up {
-            from {
-                transform: translateY(100vh) rotate(0deg);
-                opacity: 1;
-            }
-            to {
-                transform: translateY(-100px) rotate(360deg);
-                opacity: 0;
-            }
-        }
-    </style>
-</body>
+    </section>
+    <footer>
+        <div class                        = "container">
+            <p>&copy; 2025 MADDY.</p>
+        </div>
+    </footer>
+    <script src                           = "script.js"></script>
+    </body>
 </html>
